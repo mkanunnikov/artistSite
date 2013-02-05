@@ -1,0 +1,21 @@
+@(pageSize:Int, pictures: List[model.Picture])
+
+@main("Галерея") {
+    <div class="gallery">
+        <div class="gallery_top">Каталог картин.  Картин на странице : @pageSize</div>
+        @for(picture <- pictures){
+            <div class="picture_area">
+            @if(picture.getFotos==null){
+                <span class="foto"><img src="@routes.Assets.at("images/favicon.png")" alt="Image not found"/></span>
+            @*else {*@
+                @*<span class="foto"><img src="@picture.getFotos.get(0)" alt="Image not found"/></span>*@
+            }
+                <span class="picture">Название: @picture.getName</span>
+                <span class="picture">Описание: @picture.getDescription</span>
+                <span class="picture">Год: @picture.getYear</span>
+                <span class="price">Цена: @picture.getPrice</span>
+            </div>
+        }
+    </div>
+
+}

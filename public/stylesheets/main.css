@@ -1,0 +1,40 @@
+div.sidebar{
+    color: gray;
+    font-size: 20px;
+    text-align: left;
+}
+div.body{
+    margin: 100px 40px 10px 70px;
+    width: 70%;
+}
+div.gallery{
+    margin: 10px 10px 10px 10px;
+    background-color: #d3d3d3;
+}
+div.gallery{
+    margin: 10px 10px 10px 10px;
+    background-color: #d8d8d8;
+}
+div.picture_area{
+    margin: 30px 40px 10px 30px;
+    background-color: #5f9ea0;
+    width: 300px;
+    /*vertical-align: top;*/
+    float: left;
+
+}
+span.price{
+    color: blue;
+    font: bold;
+    font-size: large;
+    vertical-align: bottom;
+}
+span.foto{
+    text-align: left;
+    height: 100px;
+    float: left;
+}
+
+span.picture{
+    text-align: right;
+}
